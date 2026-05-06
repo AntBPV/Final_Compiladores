@@ -1,0 +1,18 @@
+// PRUEBA EXITOSA 9: Operador de desigualdad y condición compuesta
+escena acceso {
+    var clave = "abierto";
+    var intentos = 0;
+    si (clave != "cerrado") {
+        decir "Acceso concedido al sistema!";
+        opcion "Entrar" ir_a sistema;
+    } sino {
+        decir "Acceso denegado.";
+        opcion "Reintentar" ir_a acceso;
+    }
+}
+
+escena sistema {
+    var usuario = "admin";
+    decir "Bienvenido, " + usuario;
+    decir "Sesión iniciada correctamente.";
+}

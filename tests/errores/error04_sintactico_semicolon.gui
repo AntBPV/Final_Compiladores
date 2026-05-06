@@ -1,0 +1,10 @@
+// ERROR SINTÁCTICO 4: Falta de punto y coma al final de 'decir'
+escena inicio {
+    decir "Hola mundo"
+    decir "Segunda línea";
+    opcion "Continuar" ir_a fin;
+}
+
+escena fin {
+    decir "Terminado";
+}

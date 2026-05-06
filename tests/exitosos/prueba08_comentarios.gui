@@ -1,0 +1,24 @@
+// PRUEBA EXITOSA 8: Comentarios en el código fuente
+// Este es el guion de bienvenida del sistema
+
+escena bienvenida {
+    // Mensaje principal de bienvenida
+    decir "Sistema de Guiones Interactivos v1.0";
+    decir "Presiona enter para comenzar...";
+    opcion "Iniciar" ir_a menu;
+}
+
+// Escena del menú principal
+escena menu {
+    var opcion_actual = 1;
+    // Mostrar opciones del menú
+    decir "Menu Principal";
+    si (opcion_actual == 1) {
+        decir "Opción 1 seleccionada por defecto";
+    }
+    opcion "Nueva partida" ir_a partida;
+}
+
+escena partida {
+    decir "Nueva partida iniciada!";
+}

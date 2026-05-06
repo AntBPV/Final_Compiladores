@@ -1,0 +1,9 @@
+// ERROR SINTÁCTICO 6: Falta la palabra clave 'ir_a' en opcion
+escena inicio {
+    decir "Elige tu destino";
+    opcion "Ir al bosque" bosque;
+}
+
+escena bosque {
+    decir "Estás en el bosque";
+}

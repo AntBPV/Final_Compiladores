@@ -1,0 +1,10 @@
+// ERROR SEMÁNTICO 10: Escena duplicada y variable redeclarada
+escena inicio {
+    var puntos = 10;
+    var puntos = 20;
+    decir "Puntos: " + puntos;
+}
+
+escena inicio {
+    decir "Esta escena ya fue declarada arriba!";
+}

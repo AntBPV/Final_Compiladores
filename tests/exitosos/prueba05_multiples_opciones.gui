@@ -1,0 +1,19 @@
+// PRUEBA EXITOSA 5: Múltiples opciones en una escena
+escena cruce {
+    decir "Llegas a un cruce de caminos.";
+    opcion "Ir al norte" ir_a bosque;
+    opcion "Ir al sur" ir_a desierto;
+    opcion "Ir al este" ir_a ciudad;
+}
+
+escena bosque {
+    decir "Entras al bosque oscuro. Hay criaturas aquí.";
+}
+
+escena desierto {
+    decir "El calor del desierto es implacable.";
+}
+
+escena ciudad {
+    decir "La ciudad está llena de mercaderes y aventuras.";
+}

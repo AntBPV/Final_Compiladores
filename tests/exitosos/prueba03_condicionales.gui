@@ -1,0 +1,15 @@
+// PRUEBA EXITOSA 3: Condicionales si/sino
+escena evaluacion {
+    var puntos = 75;
+    si (puntos >= 60) {
+        decir "Aprobaste el nivel!";
+        opcion "Avanzar" ir_a avanzado;
+    } sino {
+        decir "No alcanzaste el puntaje minimo.";
+        opcion "Reintentar" ir_a evaluacion;
+    }
+}
+
+escena avanzado {
+    decir "Bienvenido al nivel avanzado!";
+}

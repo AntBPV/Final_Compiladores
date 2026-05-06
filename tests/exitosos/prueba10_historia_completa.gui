@@ -1,0 +1,40 @@
+// PRUEBA EXITOSA 10: Guion completo - Historia de aventura
+escena portada {
+    decir "=== La Leyenda del Compilador ===";
+    decir "Una aventura épica de código y lógica";
+    opcion "Comenzar historia" ir_a aldea;
+}
+
+escena aldea {
+    var valentia = 8;
+    decir "Llegas a la aldea de Sintaxia.";
+    decir "El anciano te habla:";
+    decir "Tu valentía es: " + valentia;
+    si (valentia >= 7) {
+        decir "Eres digno de la mision, heroe!";
+        opcion "Aceptar misión" ir_a fortaleza;
+    } sino {
+        decir "Aún no estás listo. Entrena más.";
+        opcion "Entrenar" ir_a entrenamiento;
+    }
+}
+
+escena entrenamiento {
+    var valentia = 10;
+    decir "Después de entrenar, tu valentía es: " + valentia;
+    opcion "Ir a la fortaleza" ir_a fortaleza;
+}
+
+escena fortaleza {
+    var enemigos = 3;
+    decir "La fortaleza tiene " + enemigos + " guardianes.";
+    si (enemigos != 0) {
+        decir "Debes derrotar a todos!";
+        opcion "Luchar" ir_a victoria;
+    }
+}
+
+escena victoria {
+    decir "Ganaste! El compilador ha sido liberado!";
+    decir "FIN";
+}

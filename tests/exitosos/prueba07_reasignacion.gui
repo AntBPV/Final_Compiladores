@@ -1,0 +1,16 @@
+// PRUEBA EXITOSA 7: Reasignación de variables
+escena laboratorio {
+    var energia = 100;
+    decir "Energía inicial: " + energia;
+    energia = 50;
+    decir "Energía tras experimento: " + energia;
+    si (energia < 60) {
+        decir "Alerta: energía baja!";
+        opcion "Recargar" ir_a recarga;
+    }
+}
+
+escena recarga {
+    var energia = 100;
+    decir "Energía restaurada a: " + energia;
+}

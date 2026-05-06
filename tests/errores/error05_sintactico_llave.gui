@@ -1,0 +1,8 @@
+// ERROR SINTÁCTICO 5: Falta llave de cierre '}' en la escena
+escena inicio {
+    decir "Esta escena no cierra bien";
+    opcion "Ir" ir_a fin;
+
+escena fin {
+    decir "Fin del guion";
+}

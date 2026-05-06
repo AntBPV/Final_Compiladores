@@ -1,0 +1,5 @@
+// ERROR LÉXICO 3: Caracteres inválidos # y $ en el código
+escena inicio {
+    var #nivel = 5;
+    decir $mensaje;
+}

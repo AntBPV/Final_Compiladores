@@ -1,0 +1,5 @@
+// ERROR LÉXICO 1: Carácter desconocido '@' en el código
+escena inicio {
+    var puntos@ = 100;
+    decir "Hola";
+}

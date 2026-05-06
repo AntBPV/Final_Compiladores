@@ -1,0 +1,10 @@
+// ERROR SEMÁNTICO 9: Uso de variable no declarada con 'var'
+escena inicio {
+    nivel = 5;
+    decir "Tu nivel es: " + nivel;
+    opcion "Continuar" ir_a fin;
+}
+
+escena fin {
+    decir "Adiós";
+}

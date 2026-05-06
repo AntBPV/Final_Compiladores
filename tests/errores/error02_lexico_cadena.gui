@@ -1,0 +1,9 @@
+// ERROR LÉXICO 2: Cadena de texto sin cerrar (falta comilla de cierre)
+escena inicio {
+    decir "Este texto nunca termina...;
+    opcion "Salir" ir_a fin;
+}
+
+escena fin {
+    decir "Fin";
+}

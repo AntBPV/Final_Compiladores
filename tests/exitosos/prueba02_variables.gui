@@ -1,0 +1,12 @@
+// PRUEBA EXITOSA 2: Variables y concatenación de cadenas
+escena inicio {
+    var nombre = "Jugador1";
+    var nivel = 1;
+    decir "Hola, " + nombre + "!";
+    decir "Estás en el nivel " + nivel;
+    opcion "Ir al combate" ir_a combate;
+}
+
+escena combate {
+    decir "El combate ha comenzado!";
+}

@@ -1,0 +1,14 @@
+// PRUEBA EXITOSA 1: Flujo básico de escenas conectadas
+escena inicio {
+    decir "Bienvenido al guion interactivo!";
+    opcion "Comenzar aventura" ir_a juego;
+}
+
+escena juego {
+    decir "Estas en el nivel 1. Prepárate!";
+    opcion "Continuar" ir_a fin;
+}
+
+escena fin {
+    decir "Has completado el guion. Gracias por jugar!";
+}

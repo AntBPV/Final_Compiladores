@@ -1,0 +1,11 @@
+// ERROR SEMÁNTICO 8: Referencia a escena que no existe
+escena inicio {
+    decir "Bienvenido";
+    opcion "Ir al castillo" ir_a castillo;
+}
+
+escena sala {
+    decir "Estás en la sala";
+    opcion "Ir al jardin" ir_a jardin_secreto;
+}
+// Nota: ni 'castillo' ni 'jardin_secreto' están definidos

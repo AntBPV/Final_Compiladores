@@ -1,0 +1,23 @@
+// PRUEBA EXITOSA 6: Comparaciones numéricas con diferentes operadores
+escena tienda {
+    var oro = 150;
+    var precio = 100;
+    si (oro > precio) {
+        decir "Tienes suficiente oro para comprar el objeto.";
+        opcion "Comprar espada" ir_a equipado;
+    } sino {
+        decir "No tienes suficiente oro.";
+        opcion "Salir de la tienda" ir_a ciudad;
+    }
+}
+
+escena equipado {
+    var fuerza = 10;
+    si (fuerza >= 10) {
+        decir "Tu fuerza es suficiente para usar la espada!";
+    }
+}
+
+escena ciudad {
+    decir "Regresas a la ciudad sin compras.";
+}

@@ -1,0 +1,15 @@
+// PRUEBA EXITOSA 4: Variables booleanas
+escena mision {
+    var completado = falso;
+    var activo = verdadero;
+    si (activo == verdadero) {
+        decir "La misión está activa.";
+        opcion "Completar misión" ir_a resultado;
+    } sino {
+        decir "La misión no está disponible.";
+    }
+}
+
+escena resultado {
+    decir "Misión completada con éxito!";
+}
