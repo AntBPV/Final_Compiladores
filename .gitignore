@@ -1,0 +1,17 @@
+# Virtual environments (the big ones)
+venv/
+.venv/
+env/
+bin/
+include/
+lib/
+share/
+
+# Python bytecode (compiled files)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environment variables (secrets/API keys)
+.env
+.venv
